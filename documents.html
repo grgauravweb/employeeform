@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <form method="post" action="file.php" enctype="multipart/form-data">
+            <h1>Documents Upload</h1>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" name="name" class="form-control" id="name" placeholder="Name">
+            </div>
+            <div class="form-group">
+                <label for="employee_sign">Signature</label>
+                <input type="file" name="employee_sign" class="form-control" id="employee_sign" placeholder="Signature">
+            </div>
+            <div class="form-group">
+                <label for="resume">Resume</label>
+                <input type="file" name="resume" class="form-control" id="resume" placeholder="Resume">
+            </div>
+            <div class="form-group">
+                <label for="employee_qualificaton">Qualification Certificates</label>
+                <input type="file" name="employee_qualificaton[]" class="form-control" id="employee_qualificaton" multiple>
+            </div>
+            <div class="form-group">
+                <label for="photo">Photograph</label>
+                <input type="file" name="photo" class="form-control" id="photo" placeholder="Photograph">
+            </div>
+            <div class="form-group">
+                <label for="experience_letter">Experience Letter</label>
+                <input type="file" name="experience_letter" class="form-control" id="experience_letter" multiple>
+            </div>
+            <div class="form-group">
+                <label for="offer_letter_last_company">Offer Letter Of Last company</label>
+                <input type="file" name="offer_letter_last_company" class="form-control" id="offer_letter_last_company"
+                    placeholder="Offer Letter Of Last company">
+            </div>
+            <div class="form-group">
+                <label for="bank_statement">Bank Statement - 3 months</label>
+                <input type="file" name="bank_statement" class="form-control" id="bank_statement" placeholder="Bank Statement">
+            </div>
+            <div class="form-group">
+                <label for="salary_slip">Sallary Slips - 3 months</label>
+                <input type="file" name="salary_slip" class="form-control" id="salary_slip" placeholder="Bank Statement" multiple>
+            </div>
+            <div class="form-group">
+                <label for="adhar">Upload Adhar:</label>
+                <input type="file" name="adhar_front" class="form-control" id="adhar_front" placeholder="Upload Adhar Front Side">
+                <input type="file" name="adhar_back" class="form-control" id="adhar_back" placeholder="Upload Adhar Back Side">
+            </div>
+            <div class="form-group">
+                <label for="accademic_certificate">Accademic Certificates</label>
+                <input type="file" name="accademic_certificate" class="form-control" id="accademic_certificate" multiple>
+            </div>
+            <div class="form-group">
+                <label for="pan">Upload PAN Card</label>
+                <input type="file" name="pan" class="form-control" id="pan">
+            </div>
+            <div class="form-group">
+                <label for="resignation">Upload Resignation Letter</label>
+                <input type="file" class="form-control" id="resignation">
+            </div>
+            <div class="form-group">
+                <label for="bank_passbook">Upload Bank Passbook</label>
+                <input type="file" name="bank_passbook" class="form-control" id="bank_passbook" multiple>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
